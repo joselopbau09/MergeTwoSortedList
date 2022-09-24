@@ -1,4 +1,4 @@
-package src;
+
 /** 
  * Clase que se encarga de simular el comportamiento de una lista simple ligada 
  * @author: José Luis López Bautista 

@@ -1,4 +1,4 @@
-package src;
+
 public class Prueba {
     
     /**
@@ -9,7 +9,7 @@ public class Prueba {
      * @return La lista ordenada de menor a mayor.
      */
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode listaOrder = new ListNode();
+        ListNode listaOrdenada = new ListNode();
 
         if(list1 == null && list2 == null) {
             return null;
@@ -21,14 +21,14 @@ public class Prueba {
             return list1;
         }
         if (list1.val <= list2.val) {
-            listaOrder.val = list1.val;
-            listaOrder.next = mergeTwoLists(list1.next, list2);
+            listaOrdenada.val = list1.val;
+            listaOrdenada.next = mergeTwoLists(list1.next, list2);
         } else {
-            listaOrder.val = list2.val;
-            listaOrder.next = mergeTwoLists(list1, list2.next);
+            listaOrdenada.val = list2.val;
+            listaOrdenada.next = mergeTwoLists(list1, list2.next);
         }
 
-        return listaOrder;
+        return listaOrdenada;
     }
 
     public static void main(String[] args) {
@@ -37,22 +37,22 @@ public class Prueba {
         ListNode list1 = new ListNode(1,new ListNode(2, new ListNode(4)));
         ListNode list2 = new ListNode(1,new ListNode(3, new ListNode(4)));
 
-        ListNode listaOrder = mergeTwoLists(list1, list2);
+        ListNode listaOrdenada = mergeTwoLists(list1, list2);
 
         list1.printList();
         list2.printList();
-        listaOrder.printList();
+        listaOrdenada.printList();
 
         System.out.println("Ejemplos 2:");
 
         list1 = new ListNode(1,new ListNode(2, new ListNode(4, new ListNode(9, new ListNode(10)))));
         list2 = new ListNode(1,new ListNode(3, new ListNode(4, new ListNode(7))));
 
-        listaOrder = mergeTwoLists(list1, list2);
+        listaOrdenada = mergeTwoLists(list1, list2);
 
         list1.printList();
         list2.printList();
-        listaOrder.printList();
+        listaOrdenada.printList();
 
     }
 }

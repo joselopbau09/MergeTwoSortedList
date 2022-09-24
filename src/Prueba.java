@@ -2,9 +2,10 @@ package src;
 public class Prueba {
     
     /**
+     * Metodo que se encarga de crear una lista ordenadas de menor a mayor, mediante el uso de dos con el mismo orden. 
      * 
-     * @param list1 
-     * @param list2 
+     * @param list1 Lista a unir ordenada de menor a mayor.
+     * @param list2 Lista a unir ordenada de menor a mayor.
      * @return La lista ordenada de menor a mayor.
      */
     public static ListNode mergeTwoLists(ListNode list1, ListNode list2) {

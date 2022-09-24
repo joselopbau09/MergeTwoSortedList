@@ -12,7 +12,7 @@ Para ejecutar el programa se necesita:
 Para su ejecución se descomprime el archivo de tipo ".zip".
 1. Dirigirse en la terminal a la carpeta src: 
 ```
-MergeTwoSortedLists/src$
+MergeTwoSortedLists$
 ```
 2. Ejecutar el comando 
 ```
